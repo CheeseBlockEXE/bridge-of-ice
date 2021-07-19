@@ -23,9 +23,8 @@ VARIATION:
 - Snow: Driving over too many small mounds of snow can lead to them getting stuck in the tires and your steering will become erratic until they melt away after a time
 - Truck Engine: Sometimes the engine of your old busted up truck will start to rattle away for a bit and obscure the sounds you need to be listening out for (occurs randomly)
 - Vision and Sound-Obscuring Weather Effects: As the game progresses, the sun will set, forcing the use of headlights while the fog and snow will become heavier, requiring windscreen wipers (these are both automated)
-- Visual Red Herrings: Tire marks from other trucks are inprinted on the snow, but not all of them are created equal and some can even lead you directly towards danger (and do I see a shadow moving UNDER the ice, or is that just me...?)
+- Visual Red Herrings: Tire marks from other trucks are imprinted on the snow, but not all of them are created equal and some can even lead you directly towards danger (and do I see a shadow moving UNDER the ice, or is that just me...?)
 - Time: The night darkness will arrive swiftly if the player takes too long to cross the ice sheet, meaning that they are forced to constantly consider a tough decision: take the long safe approach and make things more difficult later on or cut corners to beat the sun and risk the possibility of near-instant failure
-
 
 AUDIO:
 - The sounds of the roads are going to figure into the gameplay, so consideration should be made that all ambient and decorative sound design take a backseat to sounds directly pertaining to the gameplay experience.
@@ -61,16 +60,50 @@ Main gameplay scenario (driving over the frozen lake)
 Game Over screen (after truck crashes through ice, Gaussian blur as truck is submerged in blue, fade to black, metal creaking and cold underwater noise as “game over” text fades in over the top, takes players back to title screen)
 Victory screen (fade to black, audio of engine stopping and character entering home via front door with calming homely ambience and “congratulations” text on-screen with credits.)
 
+CODING REQS:
 
-
-Things to Implement:
+Main Gameplay Loop:
 Truck
 Constant moving
 Turning
-Loose ice
-Warning ice
-Cracked ice
-Snow mounds
-Death screen
+truck drive forward     until predefined end or hits obstacle (Obstacle = another partially sunken truck sticking out from under the ice sheet OR a tree situated on the boundaries of the game map)    
+ICE: As detailed on the map pinned in #image-moodboard there are various safe zone routes that thin out as the player makes progress across the ice bridge. These safe zones are constructed with collision meshes that are invisible to the player.
+(Player leaves safe zone collision mesh > 15 sec death timer ticks down + truck speed decreases slowly by up to 30% + Ice crack sounds play, intensify with increased range > if death timer reaches zero > ice truck sinking sequence plays > game over)
+(Player re-enters safe-zone before death timer reaches zero > truck speed goes back to original default + death timer resets, time can be balanced + if player had less than four seconds before the death timer ran out, activate visual effect “Water splashing underneath newly cracked ice” behind player, viewable from truck rear view mirror)
+Snow mounds (Truck passes over > sounds of slushy sleet in the tire > erratic sensitivity for steering controls (lasts 15 secs, can be balanced)
 
+Audio:
+Audio effect triggers
+Truck engine hiccups: (no discernible pattern or correlation with gameplay actions or events; they occur solely to throw the player off, can play every minute or so)
+Loud blizzard sounds: (slowly rise in volume and intensity to obscure other important sounds as night time encroaches to obscure vision)
+Ice cracks, In order of intensity (as the player drives out and further away from the safe zones): Subtle ice rumbling/water bubbling between the fissures, tires shredding ice as it all starts to break apart
+Audio Groups(sfx, vo, music, ambience)
+Any Dialogue? (don’t think there will be any)
 
+Visual Effects:
+“Low-resolution” screen filter effects (partially emulating a high-contrast colour-bleeding CRT feed of classic playstation 1 gameplay)
+Fail sequence (control is ripped from the player, truck slows to a crawl, angles downward to drive “through” the ice into blue fog under it, water splash visuals erupt from the front window, quick gaussian blur and fade to black after 5 secs)
+Death screen (“game over” text fades in slowly on black background, slowly fades out after 5 secs, load main menu “opening screen” after)
+Ice and Snow mound effects
+Blizzard particle effects in world/front truck window obscured by landing snow at its borders, narrowing field of view
+Water splashing underneath newly cracked ice
+Dark “shapes” under the ice moving briefly with the truck
+Dark “shapes” receding in truck rear view mirror
+Fog
+“Day” slowly turning to “night” (world light dimming gradually on a timer)
+Camera rapidly “RinterpTo” one of three dutch angles when driving over a snow mound or escaping a danger zone just before the “death timer” expires (this happens on random instances of such events)
+
+UI:
+Opening Screen (camera viewing ice sheet horizon from low angle while underneath the truck model, logo top-centre, “play”, “exit” and “options” etc bottom of screen)
+pause screen (exit game, audio settings, controls, ect)
+Controls (rebind keys?, set steering input to toggle button for input or hold down button for input)
+audio settings (adjust “helpful” audio to distinguish it from the general ambience)
+Help screen? (Text dump explaining story context, game objective and survival hints)
+Cutscenes/Animations:
+Opening cinematic can probably be done best with cinemachine and timeline
+Any character animations will need to be done by non coders though (character activity can be implied and obscured behind screen overlays to cut down on dev time)
+Game does the panning down to trucks intro sequence finishes sequence then calls signal to begin actual gameplay
+Arms on steering wheel that rotates based on truck steering direction, attached to unmoving body
+Gently rattling camera shake that becomes more violent as the player steers further and further away from the safe zone
+Extras:
+If Dialogue then closed captions always helpful
