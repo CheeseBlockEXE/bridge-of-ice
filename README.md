@@ -100,10 +100,144 @@ Controls (rebind keys?, set steering input to toggle button for input or hold do
 audio settings (adjust “helpful” audio to distinguish it from the general ambience)
 Help screen? (Text dump explaining story context, game objective and survival hints)
 Cutscenes/Animations:
-Opening cinematic can probably be done best with cinemachine and timeline
-Any character animations will need to be done by non coders though (character activity can be implied and obscured behind screen overlays to cut down on dev time)
-Game does the panning down to trucks intro sequence finishes sequence then calls signal to begin actual gameplay
 Arms on steering wheel that rotates based on truck steering direction, attached to unmoving body
 Gently rattling camera shake that becomes more violent as the player steers further and further away from the safe zone
+Opening cinematic can probably be done best with cinemachine and timeline
+Any character animations will need to be done by non coders though (character activity can be implied and obscured behind screen overlays to cut down on dev time)
+Game does the panning down to trucks intro sequence finishes sequence then calls signal to begin actual gameplay (NEXT PAGE)
+
+
+
+
+INTRO CUTSCENE:
+
+[PLAY GAME selected]
+[Slow fade to white]
+[Loading with no icons]
+[Fade in slowly on scene with gradual ominous ambient music]
+[Camera pulls backwards across ice lake from end/midpoint on, sunset seen through foggy horizon, camera faces the same single direction at all times only moving backwards from sunset, lines of text appear and disappear in sequence one after the other]
+
+"Date:
+October 18th 2011
+16:24pm"
+
+[Break]
+
+"Location:
+Amur River
+Sino-Russian Border"
+
+[Break]
+
+"Begin log:
+Returning to base after delivery
+No other drivers on hand to assist"
+
+[Break]
+
+"Weather is bad
+Local reports warned of heavy fog
+Snowstorms also blocking public routes"
+
+[Break]
+
+"Needed to pay rent
+Money was scarce
+This job should see me through for a while"
+
+[Break, Thick layers of snow are seen on the ice as the camera speed starts to slow, ambient music intensifies]
+
+"Running on fumes now
+All roads are blocked up by heavy snowfall
+Road works aren't fast enough"
+
+[Truck drives over the snow towards the ice, moving in the opposite direction to the slower moving camera]
+
+"Union PSA gave severe caution
+Advised heavily against driving on ice
+The river ice is still compromised"
+
+[Camera moves past broken caution tape implying the truck just broke through it, camera slows to a stop just on the main road that the truck seemingly veered away from]
+
+"No choice now"
+
+[Cut to black with break, ambient music stops at climax]
+
+"End log"
+
+[Loading, No icons, Smash-cut to gameplay with sound, No fancy transition]
+
+
+
+
+
+
+
+
+
+ENDING CUTSCENE:
+    
+[Truck reaches the main road again]
+[In-game sounds echo into silence, screen fades slowly to white]
+[Beat]
+[Slow fade to black]
+[Beat]
+[Soothing ambience plays with soft distant truck engine hum over final diary log entries]
+
+"Date: October 18th 2011, 21:08pm"
+
+[Break]
+
+"Location: The Home Stretch"
+
+[Break]
+
+"Begin log:
+So tired"
+
+[Break]
+
+"Will eat and rest for a bit now"
+
+[Break]
+
+"Then prep for more winter deliveries"
+
+[In the darkness, a small pair of truck headlamps slowly drift across the screen from the right as the log entries keep appearing on-screen, light occasionally blocked by trees]
+
+"Called friends so they know I'm okay"
+
+[Break]
+
+"They were very concerned"
+
+[Break]
+
+"I will have help next time"
+
+[Break]
+
+"But it still won't be easy"
+
+[Truck headlamps stop three quarters of the way to the left of the screen, soothing ambient music and engine hum stops]
+
+"For any of us"
+
+[Two more lights appear, both square shaped, one is coming through a window, the other is through an open door]
+
+"None of us are ever really finished"
+
+[Break]
+
+"So tired"
+
+[All lights turn off with an audible “click”, screen is bathed in black]
+
+"End log"
+
+[Break]
+[Slow fade in on "Thank you for playing" credits screen]
+
+
 Extras:
 If Dialogue then closed captions always helpful
