@@ -5,7 +5,7 @@ using UnityEngine;
 public class steering_wheel_creepyrotation : MonoBehaviour
 {
 
-    float rotationConst = -142.999f;
+    float rotationConst = -52.999f;
 
     float wheelAngle = 120f;
     float smoth = 2f;
@@ -21,7 +21,7 @@ public class steering_wheel_creepyrotation : MonoBehaviour
         float jitterWheel = jitter * wheelMoveBy + jitter * 5;
 
         Quaternion target = Quaternion.Euler(rotationConst, 0, jitterWheel);
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smoth);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, target, Time.deltaTime * smoth);
 
 
     }

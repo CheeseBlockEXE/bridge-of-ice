@@ -6,8 +6,10 @@ public class steering_wheel_rotation : MonoBehaviour
 {
 
     float wheelAngle = 30f;
-    float rotationConst = -142.999f;
+    float rotationConst = -52.999f;
     public float smoth = 10f;
+
+    public GameObject truckObj;
 
 
     // Start is called before the first frame update
@@ -21,12 +23,14 @@ public class steering_wheel_rotation : MonoBehaviour
     {
 
         float wheelMoveBy = Input.GetAxis("Horizontal") * wheelAngle;
-        
+
+        //float truckRot = truckObj.transform.rotation.
 
         Quaternion targetRot = Quaternion.Euler(rotationConst, 0, wheelMoveBy);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * smoth);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRot, Time.deltaTime * smoth);
+        //transform.rotation = rotLock.transform.rotation;
 
-        //Debug.Log("GetAxis: " + wheelMoveBy);
+        //Debug.Log();
     }
 }
