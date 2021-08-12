@@ -10,34 +10,37 @@ public class SunsetTimer : MonoBehaviour
     Color dayLight;
     Color sunset;
 
-    //total time of sunlight available
-    public float timer;
+    private TheTimer theTimer;    
 
-    
-    // Start is called before the first frame update
+    float baseIntensity = 1.5f;
+
+
+    private void Awake()
+    {
+        theTimer = GetComponent<TheTimer>();
+    }
+
+
+
     void Start()
     {
         worldLight = GetComponent<Light>();
 
         dayLight = new Vector4(0.8284087f, 0.9150651f, 0.9811321f);
         sunset = new Vector4(0.9716981f, 0.8430023f, 0.7562745f);
+
+        worldLight.intensity = baseIntensity;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //takes the value of total time of sunlight available and subtracts 1per second
-        float countdown = timer - Time.time;
-
-        float countPercent = Mathf.Clamp01(countdown/timer);
+        float countPercent = theTimer.counter();
         
-        //applies the timer to the light intensity
-        worldLight.intensity = 1.5f * countPercent;
+       
+        worldLight.intensity = baseIntensity * countPercent;
 
         worldLight.color = Color.Lerp(sunset, dayLight, countPercent);
-
-
-        //Debug.Log(countdown);
 
     }
 }

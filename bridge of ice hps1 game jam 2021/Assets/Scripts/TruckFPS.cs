@@ -7,7 +7,7 @@ public class TruckFPS : MonoBehaviour
     [Tooltip("Place steering wheels first and second.")]
     [SerializeField] WheelCollider[] wheels;
     [Tooltip("Power per wheel. \nAffects top speed along with drag, distributed among all wheels.")]
-    [SerializeField] float power = 50;
+    [SerializeField] float power = 10000;
     [Tooltip("Maximum steering angle.")]
     [SerializeField] float maxSteer = 30;
     [Tooltip("Center Of Mass. \nRight in the middle of all the wheels on the x-z plane and road height for best handling.")]
