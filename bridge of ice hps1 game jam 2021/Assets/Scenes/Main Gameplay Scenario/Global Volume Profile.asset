@@ -415,19 +415,19 @@ MonoBehaviour:
     m_Value: 1
   fogFalloffMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   blendMode:
     m_OverrideState: 1
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.372864, g: 0.5500444, b: 0.5943396, a: 1}
+    m_Value: {r: 0.47843137, g: 0.57254905, b: 0.65882355, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   precisionAlpha:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.589
   precisionAlphaDitherTexture:
     m_OverrideState: 1
     m_Value: {fileID: 2800000, guid: 4a3e96c03e7d7c34a8fb8f59764f1945, type: 3}
@@ -446,7 +446,7 @@ MonoBehaviour:
     min: 0.00001
   fogFalloffCurve:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.046
     min: -1
     max: 1
   heightFalloffEnabled:
@@ -488,7 +488,7 @@ MonoBehaviour:
     m_Value: 0
   colorLayer1:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 1, g: 0.3160377, b: 0.3160377, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -498,11 +498,11 @@ MonoBehaviour:
     min: 0
   distanceMaxLayer1:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: 55.6
     min: 0.00001
   fogFalloffCurveLayer1:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.859
     min: -1
     max: 1
   heightFalloffEnabledLayer1:
