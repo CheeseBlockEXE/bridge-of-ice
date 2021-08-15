@@ -36,15 +36,21 @@ public class IceTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
+        Debug.Log("Ice Entered");
         inIce=true;
-        TruckEffectManager.Instance.SetTruckPower(1/mod);
-        TruckEffectManager.Instance.SetTruckSpeed(1/mod);
+        if(affectPower)
+        TruckEffectManager.Instance.SetTruckPower(mod);
+        if(affectSpeed)
+        TruckEffectManager.Instance.SetTruckSpeed(mod);
     }
 
     void OnTriggerExit(Collider col)
     {
+        Debug.Log("Ice Exited");
         inIce =false;
+        if(affectPower)
         TruckEffectManager.Instance.SetTruckPower(1/mod);
+        if(affectSpeed)
         TruckEffectManager.Instance.SetTruckSpeed(1/mod);
         timer=0;
     }
