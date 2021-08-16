@@ -9,6 +9,12 @@ public class TruckEffectManager : MonoBehaviour
     public TruckFPS truck;
     public List<Collider> groundCol;
 
+
+    public AudioSource iceCracking;
+
+    public AudioSource snowSFX;
+
+
     void Awake()
     {
 Instance=this;
@@ -35,6 +41,34 @@ Instance=this;
 
             groundCol[i].enabled=false;
         }
+    }
+
+    public void PlayIceCracking()
+    {
+        iceCracking.Play();
+
+    }
+        public void PlaySnowSfx()
+    {
+        snowSFX.Play();
+        
+    }
+
+        public void StopIceCracking()
+    {
+        iceCracking.Stop();
+
+    }
+        public void StopSnowSfx()
+    {
+        snowSFX.Stop();
+        
+    }
+
+
+    public void SetRandomSteer(bool steer)
+    {
+            truck.snowTyre=steer;
     }
 
 

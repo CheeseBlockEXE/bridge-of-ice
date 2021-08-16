@@ -9,11 +9,18 @@ public class IceTrigger : MonoBehaviour
 
     public bool affectPower;
 
+    public bool affectSteer;
+    public bool playIceSFX;
+
+    public bool PlaySnowSfx;
+
     public float mod=0.7f;
 
     public float gameOverTime;
 
-    float timer;
+
+
+    float timer=15;
 
     bool inIce;
 
@@ -42,6 +49,15 @@ public class IceTrigger : MonoBehaviour
         TruckEffectManager.Instance.SetTruckPower(mod);
         if(affectSpeed)
         TruckEffectManager.Instance.SetTruckSpeed(mod);
+        if(affectSteer)
+        {
+            TruckEffectManager.Instance.SetRandomSteer(true);
+        }
+
+        if(playIceSFX)
+        TruckEffectManager.Instance.PlayIceCracking();
+        if(PlaySnowSfx)
+        TruckEffectManager.Instance.PlaySnowSfx();
     }
 
     void OnTriggerExit(Collider col)
@@ -51,7 +67,16 @@ public class IceTrigger : MonoBehaviour
         if(affectPower)
         TruckEffectManager.Instance.SetTruckPower(1/mod);
         if(affectSpeed)
+        
         TruckEffectManager.Instance.SetTruckSpeed(1/mod);
+        if(affectSteer)
+        {
+            TruckEffectManager.Instance.SetRandomSteer(false);
+        }
+        if(playIceSFX)
+        TruckEffectManager.Instance.StopIceCracking();
+        if(PlaySnowSfx)
+        TruckEffectManager.Instance.StopSnowSfx();
         timer=0;
     }
 
