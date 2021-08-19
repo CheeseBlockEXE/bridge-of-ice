@@ -5,7 +5,7 @@ using UnityEngine;
 public class TheTimer : MonoBehaviour
 {
     //THIS IS THE TIMER THAT SETS HOW LONG UNTIL IT GETS DARK (in seconds)
-    private float timer = 3;
+    private float timer = 15;
     
     public float counter()
     {
