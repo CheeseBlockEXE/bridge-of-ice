@@ -18,7 +18,7 @@ public class steering_wheel_creepyrotation : MonoBehaviour
 
         float wheelMoveBy = Input.GetAxis("Horizontal") * wheelAngle;
 
-        float jitterWheel = jitter * wheelMoveBy + jitter * 5;
+        float jitterWheel = jitter * wheelMoveBy + jitter * 5f;
 
         Quaternion target = Quaternion.Euler(rotationConst, 0, jitterWheel);
         transform.localRotation = Quaternion.Slerp(transform.localRotation, target, Time.deltaTime * smoth);
