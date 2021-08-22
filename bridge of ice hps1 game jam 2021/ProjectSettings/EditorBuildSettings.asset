@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Gameplay Scenario.unity
     guid: 3c1ba33363e0aa14bb60839c3d704ab9
+  - enabled: 1
+    path: Assets/Scenes/truck testing scene.unity
+    guid: b7e87b6a9806e2841b3046bc1ce9dbc3
   m_configObjects: {}
