@@ -17,20 +17,20 @@ public class TruckEffectManager : MonoBehaviour
 
     void Awake()
     {
-Instance=this;
+        Instance=this;
     }
 
 
     public void SetTruckPower(float mod)
     {
             
-            truck.power= truck.power*mod;
+        truck.power= truck.power*mod;
     }
 
     public void SetTruckSpeed(float mod)
     {
 
-    truck.rb.velocity= truck.rb.velocity*mod;
+        truck.rb.velocity= truck.rb.velocity*mod;
 
     }
 
@@ -38,7 +38,6 @@ Instance=this;
     {
         for(int i=0; i<groundCol.Count;i++)
         {
-
             groundCol[i].enabled=false;
         }
     }
@@ -48,29 +47,27 @@ Instance=this;
         iceCracking.Play();
 
     }
-        public void PlaySnowSfx()
+    public void PlaySnowSfx()
     {
         snowSFX.Play();
         
     }
 
-        public void StopIceCracking()
+    public void StopIceCracking()
     {
         iceCracking.Stop();
 
     }
-        public void StopSnowSfx()
+    public void StopSnowSfx()
     {
         snowSFX.Stop();
         
     }
 
-
     public void SetRandomSteer(bool steer)
     {
             truck.snowTyre=steer;
     }
-
 
     public void GameOverSequence()
     {

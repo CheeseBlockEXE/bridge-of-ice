@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class steering_wheel_rotation : MonoBehaviour
 {
-
+    static public steering_wheel_rotation WheelRotationInst;
     private steering_wheel_creepyrotation creepyRot;
 
     float wheelAngle;
@@ -12,6 +12,11 @@ public class steering_wheel_rotation : MonoBehaviour
     public float smoth = 10f;
 
     public bool isOnIce;
+
+    private void Awake()
+    {
+        WheelRotationInst = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -30,12 +35,13 @@ public class steering_wheel_rotation : MonoBehaviour
 
         transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRot, Time.deltaTime * smoth);
 
+        /*
         //debug that switches to the jittery wheel with F4
         if (Input.GetKeyDown(KeyCode.F4))
         {
             isOnIce = !isOnIce;
             Debug.Log("pretend we're goin in n out of ice");
-        }
+        }*/
 
         //toggling the janky looking wheel rotation
         if (isOnIce == true)
