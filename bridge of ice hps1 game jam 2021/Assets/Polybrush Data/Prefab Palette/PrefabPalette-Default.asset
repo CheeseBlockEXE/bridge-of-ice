@@ -15,7 +15,7 @@ MonoBehaviour:
   prefabs:
   - gameObject: {fileID: 919132149155446097, guid: 42c664bbfbcf0544da2c82aea32fe02e, type: 3}
     settings:
-      m_Strength: 85.5
+      m_Strength: 100
       m_RotationRangeMin: {x: 190.14084, y: 126.76057, z: 106.478874}
       m_RotationRangeMax: {x: 271.2676, y: 126.76057, z: 106.478874}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -31,7 +31,7 @@ MonoBehaviour:
     name: ded tree 3
   - gameObject: {fileID: 919132149155446097, guid: 03969ae99c3211646a5aec4d52fb937c, type: 3}
     settings:
-      m_Strength: 79.9
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 360}
       m_ScaleRangeMin: {x: 1.3357401, y: 1.8411552, z: 1}
@@ -47,7 +47,7 @@ MonoBehaviour:
     name: ded tree 2
   - gameObject: {fileID: 919132149155446097, guid: 6c52b46f80281b140a4ed1fe282a1078, type: 3}
     settings:
-      m_Strength: 90.7
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -95,7 +95,7 @@ MonoBehaviour:
     name: ded tree 3.2
   - gameObject: {fileID: 919132149155446097, guid: 7c7791e777512064388b1d035de4fc77, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -111,7 +111,7 @@ MonoBehaviour:
     name: rock 2
   - gameObject: {fileID: 919132149155446097, guid: c4f12c59f5bfe6f4fa1424ba1d3a247f, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -127,7 +127,7 @@ MonoBehaviour:
     name: rock 3
   - gameObject: {fileID: 919132149155446097, guid: 34b43c46b3654e94fa76b0e676eaaf71, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -143,7 +143,7 @@ MonoBehaviour:
     name: rock 4
   - gameObject: {fileID: 919132149155446097, guid: 65463591d3e08894ba4d4a799d1bad2f, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -157,3 +157,19 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: rock 5
+  - gameObject: {fileID: 919132149155446097, guid: 7c7791e777512064388b1d035de4fc77, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: rock 2
