@@ -11,13 +11,16 @@ public class RoadTrigger : MonoBehaviour
     {
         steering_wheel_rotation.WheelRotationInst.isOnIce = true;
         TruckOnIce.Instance.inIce = true;
-        Debug.Log("Ice Entered");
+        //Debug.Log("Ice Entered");
     }
 
     void OnTriggerStay(Collider col)
     {
+        ///this bit here makes it so ppl get a second chance to get to the road even after the gameover timer runs out
+        ///idk i feel like w/o it might be too punishing 
+        ///but with it, the threat of the ice becomes nonexistant
         //if (TruckOnIce.Instance.inIce == true)
-          //  TruckOnIce.Instance.truckPower = 10000;
+            //TruckOnIce.Instance.truckPower = 10000;
         steering_wheel_rotation.WheelRotationInst.isOnIce = false;
         TruckOnIce.Instance.inIce = false;
         //Debug.Log("Ice Exited");

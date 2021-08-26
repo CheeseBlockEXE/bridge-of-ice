@@ -35,15 +35,16 @@ public class steering_wheel_rotation : MonoBehaviour
 
         transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRot, Time.deltaTime * smoth);
 
+        ///debug that switches to the jittery wheel with F4
         /*
-        //debug that switches to the jittery wheel with F4
         if (Input.GetKeyDown(KeyCode.F4))
         {
             isOnIce = !isOnIce;
             Debug.Log("pretend we're goin in n out of ice");
         }*/
 
-        //toggling the janky looking wheel rotation
+
+        ///toggling the janky looking wheel rotation
         if (isOnIce == true)
         {
             creepyRot.enabled = true;

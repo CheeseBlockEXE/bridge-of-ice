@@ -58,7 +58,7 @@ MonoBehaviour:
     m_Value: 1
   geometry:
     m_OverrideState: 1
-    m_Value: 0.811
+    m_Value: 0.889
     min: 0
     max: 1
   geometryPushbackEnabled:
@@ -296,12 +296,12 @@ MonoBehaviour:
     m_Value: 0
   bloom:
     m_OverrideState: 1
-    m_Value: 0.566
+    m_Value: 0.747
     min: 0
     max: 1
   grateMaskMode:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 2
   grateMaskTexture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
@@ -310,7 +310,7 @@ MonoBehaviour:
     m_Value: 1
   scanlineSharpness:
     m_OverrideState: 1
-    m_Value: 0.139
+    m_Value: 0.102
     min: 0
     max: 1
   imageSharpness:
@@ -320,32 +320,32 @@ MonoBehaviour:
     max: 1
   bloomSharpnessX:
     m_OverrideState: 1
-    m_Value: 0.764
+    m_Value: 0.611
     min: 0
     max: 1
   bloomSharpnessY:
     m_OverrideState: 1
-    m_Value: 0.847
+    m_Value: 0.727
     min: 0
     max: 1
   noiseIntensity:
     m_OverrideState: 1
-    m_Value: 0.042
+    m_Value: 0.023
     min: 0
     max: 1
   noiseSaturation:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.551
     min: 0
     max: 1
   grateMaskIntensityMin:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.62
     min: 0
     max: 1
   grateMaskIntensityMax:
     m_OverrideState: 1
-    m_Value: 0.338
+    m_Value: 1
     min: 0
     max: 1
   barrelDistortionX:
@@ -355,7 +355,7 @@ MonoBehaviour:
     max: 1
   barrelDistortionY:
     m_OverrideState: 1
-    m_Value: 0.185
+    m_Value: 0
     min: 0
     max: 1
   vignette:
@@ -421,7 +421,7 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.47843137, g: 0.57254905, b: 0.65882355, a: 1}
+    m_Value: {r: 0.52950335, g: 0.62330335, b: 0.6886792, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -442,7 +442,7 @@ MonoBehaviour:
     min: 0
   distanceMax:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: 300
     min: 0.00001
   fogFalloffCurve:
     m_OverrideState: 1
