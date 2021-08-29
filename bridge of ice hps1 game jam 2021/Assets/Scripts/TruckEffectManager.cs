@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TruckEffectManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class TruckEffectManager : MonoBehaviour
     public AudioSource iceCracking;
 
     public AudioSource snowSFX;
+
+    public UnityEvent loseEvent;
 
 
     void Awake()
@@ -73,6 +76,7 @@ public class TruckEffectManager : MonoBehaviour
     {
 
         TurnOffGroundColliders();
+        loseEvent.Invoke();
         ///do whatever else here
     }
 
