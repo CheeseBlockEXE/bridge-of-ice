@@ -11,6 +11,8 @@ public class NightSky : MonoBehaviour
 
     Color newColor;
 
+    public bool ignoreTimer;
+
     private void Awake()
     {
         theTimer = GetComponent<TheTimer>();
@@ -22,15 +24,24 @@ public class NightSky : MonoBehaviour
 
         newColor = new Vector4(0.004049484f, 0.02766405f, 0.06603771f);
         newColor.a = 0f;
+        if(ignoreTimer)
+        {
+            newColor.a = 1;
+            nightSphere.SetColor("_MainColor", newColor);
+        }
     }
 
     private void Update()
     {
+        if(!ignoreTimer)
+        {
         float countPercent = 1 - theTimer.counter();
 
         newColor.a = countPercent;
 
         nightSphere.SetColor("_MainColor", newColor);
+        }
+
     }
 
 }

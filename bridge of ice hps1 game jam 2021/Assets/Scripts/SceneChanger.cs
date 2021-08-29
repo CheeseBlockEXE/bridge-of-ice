@@ -23,4 +23,10 @@ public class SceneChanger : MonoBehaviour
 
 
     }
+
+    public void QuitGame()
+    {
+
+        Application.Quit();
+    }
 }
