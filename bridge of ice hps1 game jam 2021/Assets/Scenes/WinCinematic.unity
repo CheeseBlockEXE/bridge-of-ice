@@ -549,7 +549,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Main Gameplay Scenario
+            m_StringArgument: StartScene
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1765916056
@@ -611,6 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38bd90792d308641b7205571af596ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNight: 0
 --- !u!114 &2136698375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,33 +648,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1686200921582088949, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788803429515039706, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2550073265305974435, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 1.8068942e-18
+      value: 2.3012537e-18
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265305974435, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000010311298
+      value: 0.0000011401908
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265305974435, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000080768814
+      value: -0.00000008931167
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265961836319, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000004390416
+      value: -0.000000956547
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265961836319, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7889812e-11
+      value: -7.833177e-11
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265961836319, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -463.32364
+      value: -415.6922
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265961836319, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 5.91765e-21
+      value: 2.9795046e-21
       objectReference: {fileID: 0}
     - target: {fileID: 2550073265961836319, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_LocalRotation.y
@@ -683,8 +692,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -3.883116e-10
       objectReference: {fileID: 0}
+    - target: {fileID: 4124172963510217739, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4517034912100817782, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981952314737663708, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7713273002937214235, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
@@ -703,6 +720,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[8].value
       value: 
       objectReference: {fileID: 1765916055}
+    - target: {fileID: 7814455514727640454, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7907859288840410452, guid: 0beac4f66754770408c413176ea8e6d7, type: 3}
       propertyPath: m_RootOrder
       value: 2

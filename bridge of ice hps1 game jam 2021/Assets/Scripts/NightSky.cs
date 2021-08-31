@@ -7,16 +7,9 @@ public class NightSky : MonoBehaviour
 
     Material nightSphere;
 
-    private TheTimer theTimer;
-
     Color newColor;
 
     public bool ignoreTimer;
-
-    private void Awake()
-    {
-        theTimer = GetComponent<TheTimer>();
-    }
 
     void Start()
     {
@@ -35,7 +28,7 @@ public class NightSky : MonoBehaviour
     {
         if(!ignoreTimer)
         {
-        float countPercent = 1 - theTimer.counter();
+        float countPercent = 1 - TheTimer.theTimer.counter();
 
         newColor.a = countPercent;
 

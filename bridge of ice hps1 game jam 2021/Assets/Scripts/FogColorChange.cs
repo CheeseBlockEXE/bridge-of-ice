@@ -8,14 +8,6 @@ public class FogColorChange : MonoBehaviour
 
     Volume nightWeight;
 
-    private TheTimer theTimer;
-
-
-    private void Awake()
-    {
-        theTimer = GetComponent<TheTimer>();
-    }
-
     void Start()
     {
         nightWeight = GetComponent<Volume>();
@@ -26,7 +18,7 @@ public class FogColorChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float countPercent = 1-theTimer.counter();
+        float countPercent = 1- TheTimer.theTimer.counter();
 
         nightWeight.weight = countPercent;
     }

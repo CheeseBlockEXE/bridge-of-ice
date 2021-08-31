@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class TheTimer : MonoBehaviour
 {
-    //THIS IS THE TIMER THAT SETS HOW LONG UNTIL IT GETS DARK (in seconds)
-    private float timer = 266;
+    static public TheTimer theTimer;
+
+    public bool isNight;
+
     
+    private void Awake()
+    {
+        theTimer = this;
+    }
+
+    //THIS IS THE TIMER THAT SETS HOW LONG UNTIL IT GETS DARK (in seconds)
+    float timer = 300;
+
     public float counter()
     {
         float countdown = timer - Time.time;
@@ -15,4 +25,11 @@ public class TheTimer : MonoBehaviour
         return countPercent;
     }
 
+    private void Update()
+    {
+        if (counter() == 0)
+            isNight = true;
+        else
+            isNight = false;
+    }
 }

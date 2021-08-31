@@ -762,6 +762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5682964661244142263}
     m_Modifications:
+    - target: {fileID: 219252756853496638, guid: 8d30decde665379409198111abe18309, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 736584173457559198, guid: 8d30decde665379409198111abe18309, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -770,6 +774,22 @@ PrefabInstance:
       propertyPath: rotLock
       value: 
       objectReference: {fileID: 537929416}
+    - target: {fileID: 2514674837506647279, guid: 8d30decde665379409198111abe18309, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265222433088128448, guid: 8d30decde665379409198111abe18309, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736552572878604363, guid: 8d30decde665379409198111abe18309, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bf5394e570a48804d9137bdbbdaaf0bc, type: 3}
+    - target: {fileID: 7924253498127110885, guid: 8d30decde665379409198111abe18309, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8139614780933163660, guid: 8d30decde665379409198111abe18309, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -982,7 +1002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2654289013353576930, guid: d7f48206e6bc8d944b5007b4a12bbd74, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -284.05634
+      value: -415.6922
       objectReference: {fileID: 0}
     - target: {fileID: 4114592986590346635, guid: d7f48206e6bc8d944b5007b4a12bbd74, type: 3}
       propertyPath: m_Pivot.y
@@ -1131,6 +1151,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeMod: 0.5
+--- !u!114 &5854112857578310431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5854112857578310428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4029c82b0c4614cbae07ed668a4227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &6193161201811664445 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8153602780711059235, guid: d7f48206e6bc8d944b5007b4a12bbd74, type: 3}

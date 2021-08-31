@@ -10,17 +10,7 @@ public class SunsetTimer : MonoBehaviour
     Color dayLight;
     Color sunset;
 
-    private TheTimer theTimer;    
-
     float baseIntensity = 1.5f;
-
-
-    private void Awake()
-    {
-        theTimer = GetComponent<TheTimer>();
-    }
-
-
 
     void Start()
     {
@@ -35,7 +25,7 @@ public class SunsetTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float countPercent = theTimer.counter();
+        float countPercent = TheTimer.theTimer.counter();
         
        
         worldLight.intensity = baseIntensity * countPercent;

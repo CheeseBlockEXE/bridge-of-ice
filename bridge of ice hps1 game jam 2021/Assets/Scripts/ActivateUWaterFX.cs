@@ -6,6 +6,9 @@ public class ActivateUWaterFX : MonoBehaviour
 {
     public GameObject compass;
     public GameObject waterSphere;
+    public GameObject splash;
+    public GameObject uwaSounds;
+    public GameObject aboveSounds;
 
     private void Start()
     {
@@ -16,5 +19,8 @@ public class ActivateUWaterFX : MonoBehaviour
     {
         compass.SetActive(false);
         waterSphere.SetActive(true);
+        splash.SetActive(true);
+        uwaSounds.SetActive(true);
+        aboveSounds.SetActive(false);
     }
 }
