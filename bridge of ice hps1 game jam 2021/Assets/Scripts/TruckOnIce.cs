@@ -16,7 +16,7 @@ public class TruckOnIce : MonoBehaviour
     private float gameOverTime = 5;
 
     float timer;
-    bool gameOverd;
+    public bool gameOverd;
 
 
     float mod = 0.2f;
@@ -43,14 +43,12 @@ public class TruckOnIce : MonoBehaviour
             timer += Time.deltaTime;
             float modVal = (mod - (timer /gameOverTime)) * 3;
             truckFps.power = truckPower * modVal;
-            truckRuninHot.SetActive(true);
             iceCrack1FX.SetActive(true);
         }
         else
         {
             timer = 0;
             truckFps.power = truckPower;
-            truckRuninHot.SetActive(false);
             iceCrack1FX.SetActive(false);
         }
 
@@ -60,7 +58,8 @@ public class TruckOnIce : MonoBehaviour
         {
             truckPower = 0;
             gameOverd = true;
-            }
+            truckRuninHot.SetActive(true);
+        }
 
         ///starts the full gameover sequence once the truck is stopped
         if(truckFps.rb.velocity.z <= 1.2f && gameOverd == true)

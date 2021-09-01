@@ -13,13 +13,13 @@ public class togglecreepyrotation : MonoBehaviour
 
     void Update()
     {
-        //this just a debug line to toggle the effect with f4
+        /*this just a debug line to toggle the effect with f4
         if(Input.GetKeyDown(KeyCode.F4))
         {
             isOnThinIce = !isOnThinIce;
             Debug.Log("pretend we're going in and out of danger territory");
         }
-
+        */
         //toggling the janky looking wheel rotation
         if (isOnThinIce == true)
         {

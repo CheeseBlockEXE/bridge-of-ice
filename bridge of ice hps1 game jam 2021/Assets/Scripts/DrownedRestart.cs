@@ -5,8 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class DrownedRestart : MonoBehaviour
 {
+    public static DrownedRestart instance;
+
+    public bool gotDrownd;
+
+    private void Start()
+    {
+        instance = this;
+        gotDrownd = false;
+    }
+
     private void OnTriggerEnter(Collider drwnColl)
     {
-        SceneManager.LoadScene("Main Gameplay Scenario");
+        gotDrownd = true;
+
+        ScreenSettings.instance.isPaused = true;
     }
 }
